@@ -1,8 +1,16 @@
+
 <h1>Welcome to the Second Page!</h1>
 
-<p>You successfully navigated to another page.</p>
+<p>Our Products</p>
 
-<app-button
-  label="Go Back"
-  link="/">
-</app-button>
+<section class="products">
+  @for (product of products; track product.id) {
+    <div class="product-card">
+      <h2>{{ product.name }}</h2>
+      <p>Price: RM {{ product.price }}</p>
+      <p>Category: {{ product.category }}</p>
+    </div>
+  }
+</section>
+
+<app-button label="Go Back" link="/"></app-button>
