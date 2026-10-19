@@ -3,10 +3,22 @@
 
 <h1>{{ title }}</h1>
 
+<h2>{{ myLocation.name }}</h2>
+<p>{{ myLocation.city }}, {{ myLocation.country }}</p>
+
+<img
+  [src]="myLocation.image"
+  [alt]="myLocation.name"
+  class="location-image"
+>
+
 <p>Welcome to my Angular application!</p>
 
 <p class="question">Are you ready?</p>
 
 <p class="confirm">Let's Go!</p>
 
-<button routerLink="/second-page">Click Here</button>
+<app-button
+  label="Go to Next Page"
+  link="/second-page">
+</app-button>

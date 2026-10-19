@@ -1,0 +1,18 @@
+
+button {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: lightpink;
+  background-color: bisque;
+  border: 2px solid lightpink;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: lightpink;
+  color: yellow;
+  border: 2px solid lightpink;
+}

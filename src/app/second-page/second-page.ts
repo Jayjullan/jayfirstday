@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Button } from '../button/button';
 
 @Component({
   selector: 'app-second-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [Button],
   templateUrl: './second-page.html',
 })
 export class SecondPage {}
